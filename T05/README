@@ -1,0 +1,45 @@
+financial_calculators.py
+
+This README provides an overview and instructions for using the code contained in the associated file. The file includes a script that presents a menu to the user, allowing them to choose between investment or bond calculations. Each section of the script is described below along with examples of how to use it.
+
+Script
+The script presents a menu to the user with two options: investment and bond calculations. The user is prompted to enter their selection, and based on their input, the corresponding calculations are performed.
+
+Investment Calculation
+If the user selects "investment," the script proceeds with calculating the amount of interest they'll earn on their investment. The user is then prompted to enter the required information: deposit amount, interest rate, and investment duration in years. The script validates the input and calculates the total amount to be returned on the investment, considering simple or compound interest. The calculated total amount is then printed.
+
+Usage:
+
+vbnet
+Copy code
+Please enter the following information:
+The amount of money you are depositing:        10000
+The percentage interest rate on your investment:      5
+The number of years that you plan on investing:     3
+Do you want "simple" or "compound" interest?      compound
+
+The total amount that will be returned on your investment is 11576.25.
+Bond Calculation
+If the user selects "bond," the script proceeds with calculating the amount they'll need to repay on a home loan. The user is prompted to enter the present value of the house, bond interest rate, and bond repayment duration in months. The script validates the input and calculates the monthly repayment amount. The calculated amount is then printed.
+
+Usage:
+
+vbnet
+Copy code
+Please enter the present value of the house:     250000
+Please enter the interest rate:      6.5
+Please enter the number of months you plan to take to repay your bond:      240
+
+The amount of money you will need to repay each month is 1803.66.
+Invalid Selection
+If the user enters an invalid selection, an error message is displayed, prompting them to enter either "investment" or "bond."
+
+Usage:
+
+vbnet
+Copy code
+Enter either "investment" or "bond" from the menu above to proceed:  savings
+Please enter either "Investment" or "Bond".
+Notes
+The user can repeatedly make calculations by entering their selection until they decide to exit the script manually.
+The script validates the user's input to ensure correct formatting and prevent errors during the calculations.
